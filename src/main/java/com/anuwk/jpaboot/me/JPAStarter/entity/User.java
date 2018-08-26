@@ -21,6 +21,7 @@ public class User {
 	
 
 	public User(String name, String role) {
+		super();
 		this.name = name;
 		this.role = role;
 	}
@@ -36,6 +37,23 @@ public class User {
 	public String getRole() {
 		return role;
 	}
+	
+	
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 
 	@Override
 	public String toString() {

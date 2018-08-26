@@ -20,7 +20,7 @@ public class UserDaoServiceCommandLineRunner implements CommandLineRunner  {
 	@Override
 	public void run(String... args) throws Exception {
 		User user = new User("Jack","Admin");
-		long insert = userDaoService.insert(user);
+		userDaoService.insert(user);
 		log.info("New User is created: " + user);
 	}
 	
